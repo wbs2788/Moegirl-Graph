@@ -3,7 +3,7 @@ import pickle
 from jieba import *
 import jieba.posseg as psg
 
-graph = Graph("bolt://localhost:7687", auth=("neo4j","yjgkg564729"))
+graph = Graph("bolt://localhost:7687", auth=("neo4j","*******"))
 no_answer = "没有查到QAQ，换一个再试试吧！"
 def get_list(k):
     with open(k+".data","rb") as filehandle:
